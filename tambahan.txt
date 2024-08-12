@@ -1,0 +1,15 @@
+Buat DB untuk menampung database warung.py (bisa menggunakan PHP Xampp atau MySQL)
+Buat DB bernama warung_mini
+lalu buat tablenya :
+
+CREATE TABLE `tbl_barang` (
+  `id` int(11) NOT NULL,
+  `kode_barang` varchar(255) NOT NULL,
+  `nama_barang` varchar(255) NOT NULL,
+  `harga_barang` int(15) NOT NULL,
+  `stok_barang` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+ALTER TABLE `tbl_barang`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `kode_barang` (`kode_barang`);
